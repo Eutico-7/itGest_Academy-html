@@ -1,0 +1,53 @@
+body {
+    background-color: blueviolet;
+    
+}
+
+@media screen and (max-width: 992px) {
+    body {
+      background-color:chocolate;
+      color: #0a0a0a;
+    }
+
+  }
+
+
+ div.div-geral{
+     width: 89%;
+     height:100%;
+    margin: 0% auto 0% auto;
+}
+
+div#form{
+    border: 10% solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+div.animate{
+    position: fixed;
+        bottom: 5%;
+        right: 5%;
+        width: 200px;
+        margin: 100px;
+        animation-name: animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+ }
+ @media screen and (max-width: 600px) {
+    div.animate {
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+        width: 100px;
+    }
+}
+@keyframes animate {
+     
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
